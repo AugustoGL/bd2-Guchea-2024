@@ -24,7 +24,7 @@ SELECT f1.title, f2.title, f1.rating
 FROM film f1, film f2
 WHERE f1.rating = f2.rating AND f1.film_id <> f2.film_id;
 
-SELECT f1.title, f2.title, f1.rating
+SELECT f2.title, f1.title, f1.rating
 FROM film f1
 INNER JOIN film f2 ON f1.rating = f2.rating AND f1.film_id <> f2.film_id;
 

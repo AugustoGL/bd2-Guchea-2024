@@ -15,7 +15,7 @@ FROM (
         OR actor.first_name LIKE 'o%' 
         OR actor.first_name LIKE 'u%'
 ) a1
-INNER JOIN (
+RIGHT JOIN (
     SELECT actor.actor_id, actor.first_name, actor.last_name, fa.film_id, film.title
     FROM actor
     INNER JOIN film_actor fa ON actor.actor_id = fa.actor_id

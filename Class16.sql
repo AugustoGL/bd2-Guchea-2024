@@ -1,5 +1,6 @@
 # 1. Insertar un nuevo empleado con un email nulo
 # Esto provocará un error porque la columna `email` tiene la restricción NOT NULL, lo que significa que no puede aceptar valores nulos.
+
 INSERT INTO employees (employeeNumber, lastName, firstName, extension, officeCode, reportsTo, jobTitle, email)
 VALUES (1010, 'Gonzalez', 'Maria', 'x4321', 3, 1003, 'HR Manager', NULL);
 # Error: Column 'email' cannot be null.
